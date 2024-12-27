@@ -1,6 +1,6 @@
+import StartMain from '@/pages/start/StartMain.vue';
+import StockMain from '@/pages/stock/StockMain.vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import StartMain from '@/pages/start/StartMain.vue'
-import StockMain from '@/pages/stock/StockMain.vue'
 import WrongRoutingPage from './components/WrongRoutingPage.vue';
 
 const router = createRouter({
@@ -17,8 +17,8 @@ const router = createRouter({
             component: StartMain
         },
         {
-            path: '/stock',
-            name: '/stock',
+            path: '/main',
+            name: '/main',
             component: StockMain,
             children: [],
         },
